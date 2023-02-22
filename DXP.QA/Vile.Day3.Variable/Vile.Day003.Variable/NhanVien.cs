@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vile.Day3.Variable
+namespace Vile
 {
     public abstract class NhanVien
     //abstract class NhanVien
@@ -17,8 +17,8 @@ namespace Vile.Day3.Variable
         {
             //this.mavn = MANV;
             mavn = MANV;
-            this.hoten = HOTEN;
-            this.diachi = DIACHI;
+            hoten = HOTEN;
+            diachi = DIACHI;
         }
         public abstract void printInfo();
         //public void printInfo();

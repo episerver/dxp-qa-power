@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DXP.QA.ConsoleBeginer", "DXP.QA.ConsoleBeginer\DXP.QA.ConsoleBeginer.csproj", "{12B5B466-83B9-4C7A-B551-230C10FF24DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vile.Day3.Variable", "Vile.Day3.Variable\Vile.Day3.Variable.csproj", "{F2B1CFC9-9478-4903-BC0A-9BF2BAC0F0AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vile.newbie", "Vile.Day3.Variable\Vile.newbie.csproj", "{F2B1CFC9-9478-4903-BC0A-9BF2BAC0F0AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

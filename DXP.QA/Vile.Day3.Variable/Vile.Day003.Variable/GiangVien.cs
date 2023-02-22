@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vile.Day3.Variable
+namespace Vile
 {
     class GiangVien : NhanVien
     {
@@ -16,20 +16,20 @@ namespace Vile.Day3.Variable
         {
             //this.chuyenmon = CHUYENMON; 
             chuyenmon = CHUYENMON;
-            this.khoa = KHOA;
-            this.test = TEST;
+            khoa = KHOA;
+            test = TEST;
         }
         public override void printInfo()
         {
-            Console.WriteLine($"Ma nhan vien: " + this.mavn
-            + '\n' + "Ho ten: " + this.hoten
-            + '\n' + "Dia chi: " + this.diachi
+            Console.WriteLine($"Ma nhan vien: " + mavn
+            + '\n' + "Ho ten: " + hoten
+            + '\n' + "Dia chi: " + diachi
             + '\n' + "Khoa: " + khoa
             //+ "Chuyen mon: " + chuyenmon
             + '\n' + "Chuyen mon: " + chuyenmon
             );
             // Su dung $
-            Console.WriteLine($"Ma nhan vien: {this.mavn}");
+            Console.WriteLine($"Ma nhan vien: {mavn}");
             Console.ReadKey();
         }
     }
