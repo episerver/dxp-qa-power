@@ -1,4 +1,6 @@
-﻿namespace Vile
+﻿using Vile.newbie.Vile.Day001.DataType;
+
+namespace Vile
 {
     internal class Program
     {
@@ -7,12 +9,13 @@
         {
             //DAY 001:
             //data type Int, string, bool
-
+            var day1 = new DataType();
+            day1.printInfo();
             // DAY 002:
             // Static
             SecondClass secondclass = new SecondClass();
             secondclass.printInfo();
-
+            
             // DAY 003:
             // Variable, sử dụng $
             //Cách cũ
@@ -23,6 +26,7 @@
             // Phân biệt public vs private: ở GiangVien khai báo là private thì ở đây tịt ko refer được
             //Console.WriteLine(giangVien.khoa); ==> lỗi vì field khoa là private
             Console.WriteLine(giangVien.test); // ==> OK vì test field là public
+            
         }
     }
 }

@@ -24,8 +24,10 @@ namespace Vile
             SecondClass obj2 = new SecondClass();
             // lỗi nếu gọi vì khi hàm là static thì gọi bằng [tên class].[tên hàm] obj2.Func();
             //obj2.Func();
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++ End of day 2 ++++++++++++++++++++++++++++++++++++++");
+            Console.ReadKey();
 
         }
-        
+
     }
 }

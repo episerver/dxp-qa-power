@@ -30,7 +30,9 @@ namespace Vile
             );
             // Su dung $
             Console.WriteLine($"Ma nhan vien: {mavn}");
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++ End of day 3 ++++++++++++++++++++++++++++++++++++++");
             Console.ReadKey();
+
         }
     }
 }
