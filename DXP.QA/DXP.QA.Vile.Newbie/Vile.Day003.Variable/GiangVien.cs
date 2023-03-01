@@ -21,7 +21,7 @@ namespace DXP.QA.Vile.Newbie.Vile.Day003.Variable
         }
         public override void printInfo()
         {
-            Console.WriteLine($"Ma nhan vien: " + mavn
+            Console.WriteLine($"Ma nhan vien: " + masv
             + '\n' + "Ho ten: " + hoten
             + '\n' + "Dia chi: " + diachi
             + '\n' + "Khoa: " + khoa
@@ -29,7 +29,7 @@ namespace DXP.QA.Vile.Newbie.Vile.Day003.Variable
             + '\n' + "Chuyen mon: " + chuyenmon
             );
             // Su dung $
-            Console.WriteLine($"Ma nhan vien: {mavn}");
+            Console.WriteLine($"Ma nhan vien: {masv}");
             Console.WriteLine("++++++++++++++++++++++++++++++++++++++ End of day 3 ++++++++++++++++++++++++++++++++++++++");
             Console.ReadKey();
 
