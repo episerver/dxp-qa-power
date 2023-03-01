@@ -1,6 +1,7 @@
 ﻿using DXP.QA.Vile.Newbie.Vile.Day001.DataType;
 using DXP.QA.Vile.Newbie.Vile.Day002.Static;
 using DXP.QA.Vile.Newbie.Vile.Day003.Variable;
+using DXP.QA.Vile.Newbie.Vile.Day005.Loop;
 
 namespace Vile
 {
@@ -28,7 +29,12 @@ namespace Vile
             // Phân biệt public vs private: ở GiangVien khai báo là private thì ở đây tịt ko refer được
             //Console.WriteLine(giangVien.khoa); ==> lỗi vì field khoa là private
             Console.WriteLine(giangVien.test); // ==> OK vì test field là public
-            
+
+            //Day004: naming convention
+
+            //DAY005: IF WHILE FOR LIST ARRAY
+            var sv = new SinhVien("T01", "Viet Le", 1985);
+            //var sinhVien = new List<SinhVien>{}
         }
     }
 }

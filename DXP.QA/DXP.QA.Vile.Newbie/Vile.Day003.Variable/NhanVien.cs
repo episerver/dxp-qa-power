@@ -10,13 +10,13 @@ namespace DXP.QA.Vile.Newbie.Vile.Day003.Variable
     //abstract class NhanVien
     //class NhanVien
     {
-        protected int mavn { get; set; }
+        protected int masv { get; set; }
         protected string hoten { get; set; }
         protected string diachi { get; set; }
         public NhanVien(int MANV, string HOTEN, string DIACHI)
         {
             //this.mavn = MANV;
-            mavn = MANV;
+            masv = MANV;
             hoten = HOTEN;
             diachi = DIACHI;
         }
