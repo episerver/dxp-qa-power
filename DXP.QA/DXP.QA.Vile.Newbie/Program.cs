@@ -1,4 +1,6 @@
-﻿using Vile.newbie.Vile.Day001.DataType;
+﻿using DXP.QA.Vile.Newbie.Vile.Day001.DataType;
+using DXP.QA.Vile.Newbie.Vile.Day002.Static;
+using DXP.QA.Vile.Newbie.Vile.Day003.Variable;
 
 namespace Vile
 {

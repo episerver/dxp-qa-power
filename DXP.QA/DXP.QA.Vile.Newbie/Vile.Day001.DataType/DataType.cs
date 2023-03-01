@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vile.newbie.Vile.Day001.DataType
+namespace DXP.QA.Vile.Newbie.Vile.Day001.DataType
 {
     using System;
     class DataType

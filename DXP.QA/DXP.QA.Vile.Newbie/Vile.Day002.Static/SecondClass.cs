@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vile
+namespace DXP.QA.Vile.Newbie.Vile.Day002.Static
+
 {
     public class SecondClass
     {
