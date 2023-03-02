@@ -84,6 +84,19 @@ namespace Vile
                 j++;
             }
             Console.WriteLine($"Tinh Tong cac phan tu le (su dung while loop + if clause): {tongle}");
+            j = 0;
+            tongle = 0;
+            while (j <= numbers.Count())
+            {
+                while(j % 2 != 0)
+                {
+                    tongle = tongle + numbers[j];
+                    break;
+                }
+                j++;
+
+            }
+            Console.WriteLine($"Tinh Tong cac phan tu le (su dung while while loop): {tongle}");
             var sv = new SinhVien("T01", "Viet Le", 1985);
             //var sinhVien = new List<SinhVien> { sv };
             var sinhVienS = new List<SinhVien>()
