@@ -1,4 +1,5 @@
-﻿using DXP.QA.Vile.Newbie.Vile.Day001.DataType;
+﻿using System;
+using DXP.QA.Vile.Newbie.Vile.Day001.DataType;
 using DXP.QA.Vile.Newbie.Vile.Day002.Static;
 using DXP.QA.Vile.Newbie.Vile.Day003.Variable;
 using DXP.QA.Vile.Newbie.Vile.Day005.Loop;
@@ -33,8 +34,83 @@ namespace Vile
             //Day004: naming convention
 
             //DAY005: IF WHILE FOR LIST ARRAY
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++ Begin day 005 ++++++++++++++++++++++++++++++++++++++");
+            
+            var numbers = new List<int>() { 1, 2, 3, 4 };
+            Console.WriteLine($"So phan tu cua list: {numbers.Count}");
+            Console.WriteLine("Cac phan tu trong list:");
+            
+            foreach (var number in numbers)
+            {
+                Console.WriteLine(number);
+                
+            }
+            var tong = 0;
+            foreach (var number in numbers)
+            {
+                tong = tong + number;
+            }
+            Console.WriteLine($"Tong cac phan tu la: {tong}");
+            var tongle = 0;
+            var j = 0;
+            foreach (var number in numbers)
+            {
+                if (j % 2 != 0)
+                {
+                    tongle = tongle + number;
+                }
+                j++;
+            }
+            Console.WriteLine($"Tinh Tong cac phan tu le (su dung foreach loop + if clause): {tongle}");
+            tongle = 0;
+            for (int i = 0; i < numbers.Count; i++)
+            {
+                if (i % 2 != 0)
+                {
+                    tongle = tongle + numbers[i];
+
+                }
+            }
+            Console.WriteLine($"Tinh Tong cac phan tu le (su dung for loop + if clause): {tongle}");
+            j = 0;
+            tongle = 0;
+            while (j <= numbers.Count())
+            {
+                if (j % 2 != 0)
+                {
+                    tongle = tongle + numbers[j];
+
+                }
+                j++;
+            }
+            Console.WriteLine($"Tinh Tong cac phan tu le (su dung while loop + if clause): {tongle}");
+            j = 0;
+            tongle = 0;
+            while (j <= numbers.Count())
+            {
+                while(j % 2 != 0)
+                {
+                    tongle = tongle + numbers[j];
+                    break;
+                }
+                j++;
+
+            }
+            Console.WriteLine($"Tinh Tong cac phan tu le (su dung while while loop): {tongle}");
             var sv = new SinhVien("T01", "Viet Le", 1985);
-            //var sinhVien = new List<SinhVien>{}
+            //var sinhVien = new List<SinhVien> { sv };
+            var sinhVienS = new List<SinhVien>()
+            {
+                new SinhVien ("T02", "Khanh Nguyen", 1995),
+                new SinhVien ("T03", "Le Nguyen", 1990)
+            };
+            // Using foreach
+            foreach (var s in sinhVienS)
+            {
+                Console.WriteLine(s.ToString());
+                
+            }
+            Console.WriteLine("$So sinh vien: {sinhVien.Count}");
         }
     }
 }
