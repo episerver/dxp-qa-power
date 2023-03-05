@@ -35,7 +35,13 @@ namespace Vile
 
             //DAY005: IF WHILE FOR LIST ARRAY
             Console.WriteLine("++++++++++++++++++++++++++++++++++++++ Begin day 005 ++++++++++++++++++++++++++++++++++++++");
-            
+            List<int> numbers = new List<int>() { 1, 2, 3, 4 };
+            var sumList = new SumList();
+            Console.WriteLine($"Tinh Tong cac phan tu le (su dung for loop + if clause): {sumList.sumUsingForAndIf(numbers)}");
+            Console.WriteLine($"Tinh Tong cac phan tu le (su dung foreach loop + if clause): {sumList.sumUsingForeachAndIf(numbers)}");
+            Console.WriteLine($"Tinh Tong cac phan tu le (su dung while loop + if clause): {sumList.sumUsingWhileAndIf(numbers)}");
+            Console.WriteLine($"Tinh Tong cac phan tu le (su dung while while loop): {sumList.sumUsingWhileAndWhile(numbers)}");
+            /*
             var numbers = new List<int>() { 1, 2, 3, 4 };
             Console.WriteLine($"So phan tu cua list: {numbers.Count}");
             Console.WriteLine("Cac phan tu trong list:");
@@ -111,6 +117,7 @@ namespace Vile
                 
             }
             Console.WriteLine("$So sinh vien: {sinhVien.Count}");
+            */
         }
     }
 }
