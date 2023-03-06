@@ -1,29 +1,5 @@
-﻿namespace Leng.Week1
-{
-    class Program
-    {
-        static void Main(string[] args, int v)
-        {
-            SinhVien sv = new SinhVien();
-            sv.DiemToan = 1;
-            sv.DiemVan = 2;
-            sv.HoTen = "AB CD";
-            sv.TrungBinh();
-
-            Array numSv = new int []{ 1,2,3,4,5,6,7,8,9,10};
-
-            foreach (var i in numSv)
-            {
-                if(i % 2 == 0)
-                {
-                    Console.Write(i);
-                }
-
-            }
-
-
-        }
-    }
+﻿namespace DXP.QA.Leng
+{    
     class SinhVien
     {
         private double diemToan;

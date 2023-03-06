@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DXP.QA.ConsoleBeginer", "DXP.QA.ConsoleBeginer\DXP.QA.ConsoleBeginer.csproj", "{12B5B466-83B9-4C7A-B551-230C10FF24DA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leng.Week1", "leng.Week1\Leng.Week1.csproj", "{167B54D9-7E1A-4634-8345-5CF088009624}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DXP.QA.Leng", "DXP.QA.Leng\DXP.QA.Leng.csproj", "{167B54D9-7E1A-4634-8345-5CF088009624}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DXP.QA.Vile.Newbie", "DXP.QA.Vile.Newbie\DXP.QA.Vile.Newbie.csproj", "{A24BC82C-9F8B-4CBB-A36E-6B00D4D68006}"
 EndProject
