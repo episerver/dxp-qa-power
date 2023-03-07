@@ -4,6 +4,7 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 	public class SumList
 	{
         private int tongLe;
+
         public int sumUsingForAndIf(List<int> numbers)
 		{
             tongLe = 0;
