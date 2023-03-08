@@ -6,7 +6,7 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 	public class SumArray
 	{
         private static int tongChan;
-        public int sumUsingForAndIf(int[] numbers)
+        public static int SumUsingForAndIf(int[] numbers)
 		{
 			tongChan = 0;
 			for (int i = 0; i < numbers.Length; i++)
@@ -17,7 +17,7 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 			return tongChan;
 		}
 
-		public int sumUsingForeachAndIf(int[] numbers)
+		public static int SumUsingForeachAndIf(int[] numbers)
 		{
 			tongChan = 0;
 			foreach (var number in numbers)
@@ -28,7 +28,7 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 			return tongChan;
 		}
 
-		public int sumUsingWhileAndIf(int[] numbers)
+		public static int SumUsingWhileAndIf(int[] numbers)
 		{
 			tongChan = 0;
 			var j = 0;
@@ -41,7 +41,7 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 			return tongChan;
 		}
 
-		public int sumUsingWhileAndWhile(int[] numbers)
+		public static int SumUsingWhileAndWhile(int[] numbers)
 		{
 			tongChan = 0;
 			var j = 0;
@@ -56,7 +56,20 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 			}
 			return tongChan;
 		}
-		
-	}
+
+		public void printInfo(int[] daySo)
+		{
+			Console.WriteLine("*****************************");
+            Console.WriteLine("Tinh tong cac so chan trong ARRAY bang 4 cach:");
+            Console.WriteLine($"Tinh Tong cac so chan (su dung for + if clause): {SumArray.SumUsingForAndIf(daySo)}");
+            Console.WriteLine($"Tinh Tong cac so chan (su dung foreach + if clause): {SumArray.SumUsingForeachAndIf(daySo)}");
+            Console.WriteLine($"Tinh Tong cac so chan (su dung while + if clause): {SumArray.SumUsingWhileAndIf(daySo)}");
+            Console.WriteLine($"Tinh Tong cac so chan (su dung while + while clause): {SumArray.SumUsingWhileAndWhile(daySo)}");
+            Console.WriteLine("Nhap phim bat ky de thoat");
+            Console.WriteLine("*****************************");
+            Console.ReadKey();
+        }
+
+    }
 }
 

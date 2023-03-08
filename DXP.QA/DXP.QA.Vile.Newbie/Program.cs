@@ -37,17 +37,19 @@ namespace Vile
             Console.WriteLine("++++++++++++++++++++++++++++++++++++++ Begin day 005 ++++++++++++++++++++++++++++++++++++++");
             List<int> numbers = new List<int>() { 1, 2, 3, 4 };
             var sumList = new SumList();
-            Console.WriteLine($"Tinh Tong cac phan tu le (su dung for + if clause): {sumList.sumUsingForAndIf(numbers)}");
-            Console.WriteLine($"Tinh Tong cac phan tu le (su dung foreach + if clause): {sumList.sumUsingForeachAndIf(numbers)}");
-            Console.WriteLine($"Tinh Tong cac phan tu le (su dung while + if clause): {sumList.sumUsingWhileAndIf(numbers)}");
-            Console.WriteLine($"Tinh Tong cac phan tu le (su dung while + while ): {sumList.sumUsingWhileAndWhile(numbers)}");
+            sumList.printInfo(numbers);
+            //Console.WriteLine($"Tinh Tong cac phan tu le (su dung for + if clause): {sumList.sumUsingForAndIf(numbers)}");
+            //Console.WriteLine($"Tinh Tong cac phan tu le (su dung foreach + if clause): {sumList.sumUsingForeachAndIf(numbers)}");
+            //Console.WriteLine($"Tinh Tong cac phan tu le (su dung while + if clause): {sumList.sumUsingWhileAndIf(numbers)}");
+            //Console.WriteLine($"Tinh Tong cac phan tu le (su dung while + while ): {sumList.sumUsingWhileAndWhile(numbers)}");
 
             var daySo = new int[] {1, 2, 3, 4, 5, 6};
             var sumArray = new SumArray();
-            Console.WriteLine($"Tinh Tong cac so chan (su dung for + if clause): {sumArray.sumUsingForAndIf(daySo)}");
-            Console.WriteLine($"Tinh Tong cac so chan (su dung foreach + if clause): {sumArray.sumUsingForeachAndIf(daySo)}");
-            Console.WriteLine($"Tinh Tong cac so chan (su dung while + if clause): {sumArray.sumUsingWhileAndIf(daySo)}");
-            Console.WriteLine($"Tinh Tong cac so chan (su dung while + while clause): {sumArray.sumUsingWhileAndWhile(daySo)}");
+            sumArray.printInfo(daySo);
+            //Console.WriteLine($"Tinh Tong cac so chan (su dung for + if clause): {SumArray.SumUsingForAndIf(daySo)}");
+            //Console.WriteLine($"Tinh Tong cac so chan (su dung foreach + if clause): {SumArray.SumUsingForeachAndIf(daySo)}");
+            //Console.WriteLine($"Tinh Tong cac so chan (su dung while + if clause): {SumArray.SumUsingWhileAndIf(daySo)}");
+            //Console.WriteLine($"Tinh Tong cac so chan (su dung while + while clause): {SumArray.SumUsingWhileAndWhile(daySo)}");
             /*
             var numbers = new List<int>() { 1, 2, 3, 4 };
             Console.WriteLine($"So phan tu cua list: {numbers.Count}");
