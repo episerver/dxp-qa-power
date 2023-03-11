@@ -1,4 +1,6 @@
 ﻿using System;
+using DXP.QA.Vile.Newbie.Vile.Common;
+
 namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 {
 	
@@ -11,7 +13,7 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 			tongChan = 0;
 			for (int i = 0; i < numbers.Length; i++)
 			{
-				if (numbers[i] % 2 == 0)
+				if (So.SoChan(numbers[i]))//(numbers[i] % 2 == 0)
 					tongChan = tongChan + numbers[i];
 			}
 			return tongChan;
@@ -22,7 +24,7 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 			tongChan = 0;
 			foreach (var number in numbers)
 			{
-				if (number % 2 == 0)
+				if (So.SoChan(number)) //(number % 2 == 0)
 					tongChan = tongChan + number;
 			}
 			return tongChan;
@@ -34,7 +36,7 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 			var j = 0;
 			while (j < numbers.Length)
 			{
-				if (numbers[j] % 2 == 0)
+				if (So.SoChan(numbers[j]))// (numbers[j] % 2 == 0)
 					tongChan = tongChan + numbers[j];
 				j++;
 			}
@@ -47,8 +49,8 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 			var j = 0;
 			while (j <numbers.Length)
 			{
-				while (numbers[j] % 2 ==0)
-				{
+				while (So.SoChan(numbers[j]))// (numbers[j] % 2 ==0)
+                {
 					tongChan = tongChan + numbers[j];
 					break;
                 }
@@ -61,6 +63,12 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 		{
 			Console.WriteLine("*****************************");
             Console.WriteLine("Tinh tong cac so chan trong ARRAY bang 4 cach:");
+			Console.WriteLine("Day so nguyen thuy:");
+            foreach (int So in daySo)
+            {
+                Console.Write($"{So}; ");
+            }
+			Console.WriteLine();
             Console.WriteLine($"Tinh Tong cac so chan (su dung for + if clause): {SumArray.SumUsingForAndIf(daySo)}");
             Console.WriteLine($"Tinh Tong cac so chan (su dung foreach + if clause): {SumArray.SumUsingForeachAndIf(daySo)}");
             Console.WriteLine($"Tinh Tong cac so chan (su dung while + if clause): {SumArray.SumUsingWhileAndIf(daySo)}");
