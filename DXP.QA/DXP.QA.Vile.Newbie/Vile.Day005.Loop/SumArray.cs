@@ -5,9 +5,10 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 {
 	
 
-	public class SumArray
+	public class SumArray : So
 	{
         private static int tongChan;
+		public static int[] daySo;
         public static int SumUsingForAndIf(int[] numbers)
 		{
 			tongChan = 0;
@@ -59,7 +60,7 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 			return tongChan;
 		}
 
-		public void printInfo(int[] daySo)
+		public override void printInfo()
 		{
 			Console.WriteLine("*****************************");
             Console.WriteLine("Tinh tong cac so chan trong ARRAY bang 4 cach:");

@@ -3,6 +3,7 @@ using DXP.QA.Vile.Newbie.Vile.Day001.DataType;
 using DXP.QA.Vile.Newbie.Vile.Day002.Static;
 using DXP.QA.Vile.Newbie.Vile.Day003.Variable;
 using DXP.QA.Vile.Newbie.Vile.Day005.Loop;
+using DXP.QA.Vile.Newbie.Vile.Common;
 
 namespace Vile
 {
@@ -35,21 +36,30 @@ namespace Vile
 
             //DAY005: IF WHILE FOR LIST ARRAY
             Console.WriteLine("++++++++++++++++++++++++++++++++++++++ Begin day 005 ++++++++++++++++++++++++++++++++++++++");
-            List<int> numbers = new List<int>() { 1, 3, 7, 8, 11, 2, 40, 51 };
+            //List<int> numbers = new List<int>() { 1, 3, 7, 8, 11, 2, 40, 51 };
+            SumList.daySo = new List<int>() { 1, 3, 7, 8, 11, 2, 40, 51 };
             var sumList = new SumList();
-            sumList.printInfo(numbers);
+            //sumList.printInfo(numbers);
+            sumList.printInfo();
             //Console.WriteLine($"Tinh Tong cac phan tu le (su dung for + if clause): {sumList.sumUsingForAndIf(numbers)}");
             //Console.WriteLine($"Tinh Tong cac phan tu le (su dung foreach + if clause): {sumList.sumUsingForeachAndIf(numbers)}");
             //Console.WriteLine($"Tinh Tong cac phan tu le (su dung while + if clause): {sumList.sumUsingWhileAndIf(numbers)}");
             //Console.WriteLine($"Tinh Tong cac phan tu le (su dung while + while ): {sumList.sumUsingWhileAndWhile(numbers)}");
 
-            var daySo = new int[] {1, 2, 3, 4, 5, 6, 21, 30};
+            //var daySo = new int[] {1, 2, 3, 4, 5, 6, 21, 30};
+            SumArray.daySo = new int[] { 1, 2, 3, 4, 5, 6, 21, 30 };
             var sumArray = new SumArray();
-            sumArray.printInfo(daySo);
+            sumArray.printInfo();
+            //sumArray.printInfo(daySo);
             //Console.WriteLine($"Tinh Tong cac so chan (su dung for + if clause): {SumArray.SumUsingForAndIf(daySo)}");
             //Console.WriteLine($"Tinh Tong cac so chan (su dung foreach + if clause): {SumArray.SumUsingForeachAndIf(daySo)}");
             //Console.WriteLine($"Tinh Tong cac so chan (su dung while + if clause): {SumArray.SumUsingWhileAndIf(daySo)}");
             //Console.WriteLine($"Tinh Tong cac so chan (su dung while + while clause): {SumArray.SumUsingWhileAndWhile(daySo)}");
+
+            //Sap xep tang dan
+            SapXep.DaySo = new int[] { 11, 2, 21, 4, 5, 6, 21, 30 };
+            var sapXep = new SapXep();
+            sapXep.printInfo();
             /*
             var numbers = new List<int>() { 1, 2, 3, 4 };
             Console.WriteLine($"So phan tu cua list: {numbers.Count}");

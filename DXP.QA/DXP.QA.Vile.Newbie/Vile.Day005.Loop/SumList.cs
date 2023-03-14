@@ -2,11 +2,11 @@
 using DXP.QA.Vile.Newbie.Vile.Common;
 namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 {
-	public class SumList
+	public class SumList : So 
 	{
         private static int tongLe;
-       
 
+        public static List<int> daySo; 
         public static int SumUsingForAndIf(List<int> numbers)
 		{
             tongLe = 0;
@@ -65,7 +65,7 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
             }
             return tongLe;
         }
-        public void printInfo(List<int> daySo)
+        public override void printInfo() //(List<int> daySo)
         {
             Console.WriteLine("*****************************");
             Console.WriteLine("Tinh tong cac phan tu le trong LIST bang 4 cach:");

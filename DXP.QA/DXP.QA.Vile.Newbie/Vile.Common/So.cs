@@ -1,7 +1,7 @@
 ﻿using System;
 namespace DXP.QA.Vile.Newbie.Vile.Common
 {
-	public class So
+	public abstract class So
 	{
         public static bool SoChan(int number)
         {
@@ -10,6 +10,7 @@ namespace DXP.QA.Vile.Newbie.Vile.Common
             else
                 return false;
         }
+        public abstract void printInfo();
         public So()
 		{
 		}
